@@ -20,4 +20,31 @@
 
   /* Borders */
   --radius-md: 6px;
-}
+
+    /* Semantic status tokens */
+  --color-semantic-error-text: #dc3545;
+  --color-semantic-error-background: #f8d7da;
+  --color-semantic-error-border: #dc3545;
+
+  /* =============================================
+   Semantic Status Tokens
+   ============================================= */
+
+  /* Semantic tokens as aliases */
+  --color-success-background: var(--color-primary-100);
+  --color-success-border: var(--color-primary-300);
+  --color-success-text: var(--color-primary-700);
+
+  --color-warning-background: #fff3cd;
+  --color-warning-border: #ffc107;
+  --color-warning-text: #856404;
+
+  --color-error-background: var(--color-semantic-error-background, #f8d7da);
+  --color-error-border: var(--color-semantic-error-text, #dc3545);
+  --color-error-text: var(--color-semantic-error-text, #721c24);
+
+  --color-info-background: #d1ecf1;
+  --color-info-border: #17a2b8;
+  --color-info-text: #0c5460;
+  }
+
