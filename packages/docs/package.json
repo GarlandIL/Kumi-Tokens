@@ -1,0 +1,13 @@
+{
+  "name": "@kumiui/docs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "echo 'Storybook coming soon'",
+    "build": "echo 'Build coming soon'"
+  },
+  "dependencies": {
+    "@kumiui/react": "workspace:*",
+    "@kumiui/tokens": "workspace:*"
+  }
+}

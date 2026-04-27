@@ -1,0 +1,9 @@
+{
+  "name": "@kumiui/tokens",
+  "version": "0.0.0",
+  "main": "dist/css/variables.css",
+  "files": ["dist"],
+  "scripts": {
+    "build": "echo 'Build will come later'"
+  }
+}
