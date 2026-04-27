@@ -1,0 +1,18 @@
+.button {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  padding: var(--space-sm) var(--space-md);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+}
+
+.primary {
+  background-color: var(--color-primary-500);
+  color: var(--color-neutral-0);
+}
+
+.secondary {
+  background-color: var(--color-neutral-100);
+  color: var(--color-neutral-900);
+}
