@@ -3,6 +3,10 @@
   "private": true,
   "scripts": {
     "dev": "pnpm --filter @kumiui/docs storybook",
-    "build": "pnpm --filter './packages/**' run build"
+    "build": "pnpm --filter './packages/**' run build",
+    "test": "pnpm -r run test"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.31.0"
   }
 }

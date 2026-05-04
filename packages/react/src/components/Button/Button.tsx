@@ -1,19 +1,20 @@
 import React from 'react';
 import styles from './Button.module.css';
 
-export interface ButtonProps {
-  children: React.ReactNode;
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  /** The visual style variant */
   variant?: 'primary' | 'secondary';
 }
 
 export const Button = ({
   children,
   variant = 'primary',
+  ...props  // catch all native props like onClick, disabled, type, etc.
 }: ButtonProps) => {
   const classNames = [
     styles.button,
-    styles[variant],   // this resolves to styles.primary or styles.secondary
+    styles[variant],
   ].join(' ');
 
-  return <button className={classNames}>{children}</button>;
+  return <button className={classNames} {...props}>{children}</button>;
 };
