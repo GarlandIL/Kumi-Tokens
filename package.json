@@ -2,7 +2,7 @@
   "name": "kumiui-root",
   "private": true,
   "scripts": {
-    "dev": "pnpm --filter @kumiui/docs dev",
+    "dev": "pnpm --filter @kumiui/docs storybook",
     "build": "pnpm --filter './packages/**' run build"
   }
 }

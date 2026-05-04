@@ -3,11 +3,20 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "echo 'Storybook coming soon'",
-    "build": "echo 'Build coming soon'"
+    "storybook": "storybook dev -p 6006",
+    "build": "storybook build"
   },
   "dependencies": {
     "@kumiui/react": "workspace:*",
     "@kumiui/tokens": "workspace:*"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^10.3.6",
+    "@storybook/addon-docs": "^10.3.6",
+    "@storybook/react": "^10.3.6",
+    "@storybook/react-vite": "^10.3.6",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "storybook": "^10.3.6"
   }
 }
