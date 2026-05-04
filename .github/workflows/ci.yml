@@ -19,7 +19,7 @@ jobs:
       - name: Set up pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 9   # or your installed version (pnpm --version)
+          version: 9
 
       # 3) Set up Node.js (pnpm needs it)
       - name: Set up Node.js
@@ -40,14 +40,10 @@ jobs:
       - name: Build components
         run: pnpm --filter @kumiui/react run build
 
-      # 7) Run lint (if we had it – we'll add later)
-      # - name: Lint
-      #   run: pnpm run lint
-
-      # 8) Type check the React library
+      # 7) Type check the React library
       - name: Type check
         run: pnpm --filter @kumiui/react run typecheck
 
-      # 9) Run unit tests
+      # 8) Run unit tests
       - name: Run tests
         run: pnpm test
